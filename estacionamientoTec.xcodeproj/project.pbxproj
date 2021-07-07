@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681CD4F92693F0160035E142 /* Espacio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CD4F82693F0160035E142 /* Espacio.swift */; };
+		681CD4FD269578410035E142 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 681CD4FC269578410035E142 /* IQKeyboardManagerSwift */; };
+		689FCC8C2691B3C900D0B1FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */; };
+		689FCC8E2691B3C900D0B1FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */; };
+		689FCC902691B3C900D0B1FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8F2691B3C900D0B1FC /* ViewController.swift */; };
+		689FCC932691B3C900D0B1FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689FCC912691B3C900D0B1FC /* Main.storyboard */; };
+		689FCC962691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC942691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld */; };
+		689FCC982691B3DF00D0B1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689FCC972691B3DF00D0B1FC /* Assets.xcassets */; };
+		689FCC9B2691B3DF00D0B1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689FCC992691B3DF00D0B1FC /* LaunchScreen.storyboard */; };
+		689FCCA526921F9200D0B1FC /* EstacionListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */; };
+		689FCCA82692200400D0B1FC /* EstacionMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */; };
+		689FCCAB2692202C00D0B1FC /* TraficoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */; };
+		689FCCB826929EDC00D0B1FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689FCCB726929EDC00D0B1FC /* GoogleService-Info.plist */; };
+		689FCCD72692A47C00D0B1FC /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */; };
+		DF7FACAD7CE177FADB665514 /* Pods_estacionamientoTec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636C25CDB1A49C3996D8E740 /* Pods_estacionamientoTec.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		636C25CDB1A49C3996D8E740 /* Pods_estacionamientoTec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_estacionamientoTec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681CD4F82693F0160035E142 /* Espacio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Espacio.swift; sourceTree = "<group>"; };
+		689FCC882691B3C900D0B1FC /* estacionamientoTec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = estacionamientoTec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		689FCC8F2691B3C900D0B1FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		689FCC922691B3C900D0B1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		689FCC952691B3C900D0B1FC /* estacionamientoTec.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = estacionamientoTec.xcdatamodel; sourceTree = "<group>"; };
+		689FCC972691B3DF00D0B1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		689FCC9A2691B3DF00D0B1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		689FCC9C2691B3DF00D0B1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstacionListaViewController.swift; sourceTree = "<group>"; };
+		689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstacionMapaViewController.swift; sourceTree = "<group>"; };
+		689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficoViewController.swift; sourceTree = "<group>"; };
+		689FCCB726929EDC00D0B1FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		B61A48AF5D18E8A98D767CC0 /* Pods-estacionamientoTec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-estacionamientoTec.release.xcconfig"; path = "Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec.release.xcconfig"; sourceTree = "<group>"; };
+		CFDB5F78ADD6A8B9A0D8C436 /* Pods-estacionamientoTec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-estacionamientoTec.debug.xcconfig"; path = "Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		689FCC852691B3C900D0B1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7FACAD7CE177FADB665514 /* Pods_estacionamientoTec.framework in Frameworks */,
+				681CD4FD269578410035E142 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		689FCC7F2691B3C900D0B1FC = {
+			isa = PBXGroup;
+			children = (
+				689FCC8A2691B3C900D0B1FC /* estacionamientoTec */,
+				689FCC892691B3C900D0B1FC /* Products */,
+				F5361814339F98430AF04A17 /* Pods */,
+				E94AAB3FF87909EC405DCC11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		689FCC892691B3C900D0B1FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				689FCC882691B3C900D0B1FC /* estacionamientoTec.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		689FCC8A2691B3C900D0B1FC /* estacionamientoTec */ = {
+			isa = PBXGroup;
+			children = (
+				689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */,
+				689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */,
+				689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */,
+				689FCC8F2691B3C900D0B1FC /* ViewController.swift */,
+				689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */,
+				689FCC912691B3C900D0B1FC /* Main.storyboard */,
+				689FCC972691B3DF00D0B1FC /* Assets.xcassets */,
+				689FCC992691B3DF00D0B1FC /* LaunchScreen.storyboard */,
+				689FCC9C2691B3DF00D0B1FC /* Info.plist */,
+				689FCCB726929EDC00D0B1FC /* GoogleService-Info.plist */,
+				689FCC942691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld */,
+				689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */,
+				689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */,
+				681CD4F82693F0160035E142 /* Espacio.swift */,
+			);
+			path = estacionamientoTec;
+			sourceTree = "<group>";
+		};
+		E94AAB3FF87909EC405DCC11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				636C25CDB1A49C3996D8E740 /* Pods_estacionamientoTec.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5361814339F98430AF04A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB5F78ADD6A8B9A0D8C436 /* Pods-estacionamientoTec.debug.xcconfig */,
+				B61A48AF5D18E8A98D767CC0 /* Pods-estacionamientoTec.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		689FCC872691B3C900D0B1FC /* estacionamientoTec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689FCC9F2691B3DF00D0B1FC /* Build configuration list for PBXNativeTarget "estacionamientoTec" */;
+			buildPhases = (
+				265782425905B9C5927E312E /* [CP] Check Pods Manifest.lock */,
+				689FCC842691B3C900D0B1FC /* Sources */,
+				689FCC852691B3C900D0B1FC /* Frameworks */,
+				689FCC862691B3C900D0B1FC /* Resources */,
+				DF3148FD81E869690739752B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = estacionamientoTec;
+			packageProductDependencies = (
+				681CD4FC269578410035E142 /* IQKeyboardManagerSwift */,
+			);
+			productName = estacionamientoTec;
+			productReference = 689FCC882691B3C900D0B1FC /* estacionamientoTec.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		689FCC802691B3C900D0B1FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					689FCC872691B3C900D0B1FC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 689FCC832691B3C900D0B1FC /* Build configuration list for PBXProject "estacionamientoTec" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 689FCC7F2691B3C900D0B1FC;
+			packageReferences = (
+				681CD4FB269578410035E142 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 689FCC892691B3C900D0B1FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				689FCC872691B3C900D0B1FC /* estacionamientoTec */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		689FCC862691B3C900D0B1FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689FCC9B2691B3DF00D0B1FC /* LaunchScreen.storyboard in Resources */,
+				689FCCB826929EDC00D0B1FC /* GoogleService-Info.plist in Resources */,
+				689FCC982691B3DF00D0B1FC /* Assets.xcassets in Resources */,
+				689FCC932691B3C900D0B1FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		265782425905B9C5927E312E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-estacionamientoTec-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3148FD81E869690739752B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		689FCC842691B3C900D0B1FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689FCC902691B3C900D0B1FC /* ViewController.swift in Sources */,
+				689FCCAB2692202C00D0B1FC /* TraficoViewController.swift in Sources */,
+				681CD4F92693F0160035E142 /* Espacio.swift in Sources */,
+				689FCC8C2691B3C900D0B1FC /* AppDelegate.swift in Sources */,
+				689FCCA82692200400D0B1FC /* EstacionMapaViewController.swift in Sources */,
+				689FCCA526921F9200D0B1FC /* EstacionListaViewController.swift in Sources */,
+				689FCCD72692A47C00D0B1FC /* RegistroViewController.swift in Sources */,
+				689FCC962691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld in Sources */,
+				689FCC8E2691B3C900D0B1FC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		689FCC912691B3C900D0B1FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				689FCC922691B3C900D0B1FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		689FCC992691B3DF00D0B1FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				689FCC9A2691B3DF00D0B1FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		689FCC9D2691B3DF00D0B1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		689FCC9E2691B3DF00D0B1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		689FCCA02691B3DF00D0B1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDB5F78ADD6A8B9A0D8C436 /* Pods-estacionamientoTec.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = estacionamientoTec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paredes.estacionamientoTec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		689FCCA12691B3DF00D0B1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61A48AF5D18E8A98D767CC0 /* Pods-estacionamientoTec.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = estacionamientoTec/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paredes.estacionamientoTec;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		689FCC832691B3C900D0B1FC /* Build configuration list for PBXProject "estacionamientoTec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689FCC9D2691B3DF00D0B1FC /* Debug */,
+				689FCC9E2691B3DF00D0B1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689FCC9F2691B3DF00D0B1FC /* Build configuration list for PBXNativeTarget "estacionamientoTec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689FCCA02691B3DF00D0B1FC /* Debug */,
+				689FCCA12691B3DF00D0B1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		681CD4FB269578410035E142 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		681CD4FC269578410035E142 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 681CD4FB269578410035E142 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		689FCC942691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				689FCC952691B3C900D0B1FC /* estacionamientoTec.xcdatamodel */,
+			);
+			currentVersion = 689FCC952691B3C900D0B1FC /* estacionamientoTec.xcdatamodel */;
+			path = estacionamientoTec.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 689FCC802691B3C900D0B1FC /* Project object */;
+}
