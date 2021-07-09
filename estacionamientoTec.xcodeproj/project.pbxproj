@@ -17,7 +17,6 @@
 		689FCC982691B3DF00D0B1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689FCC972691B3DF00D0B1FC /* Assets.xcassets */; };
 		689FCC9B2691B3DF00D0B1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689FCC992691B3DF00D0B1FC /* LaunchScreen.storyboard */; };
 		689FCCA526921F9200D0B1FC /* EstacionListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */; };
-		689FCCA82692200400D0B1FC /* EstacionMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */; };
 		689FCCAB2692202C00D0B1FC /* TraficoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */; };
 		689FCCB826929EDC00D0B1FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 689FCCB726929EDC00D0B1FC /* GoogleService-Info.plist */; };
 		689FCCD72692A47C00D0B1FC /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */; };
@@ -37,7 +36,6 @@
 		689FCC9A2691B3DF00D0B1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		689FCC9C2691B3DF00D0B1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstacionListaViewController.swift; sourceTree = "<group>"; };
-		689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstacionMapaViewController.swift; sourceTree = "<group>"; };
 		689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficoViewController.swift; sourceTree = "<group>"; };
 		689FCCB726929EDC00D0B1FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			children = (
 				689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */,
 				689FCCA426921F9200D0B1FC /* EstacionListaViewController.swift */,
-				689FCCA72692200400D0B1FC /* EstacionMapaViewController.swift */,
 				689FCC8F2691B3C900D0B1FC /* ViewController.swift */,
 				689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */,
 				689FCC912691B3C900D0B1FC /* Main.storyboard */,
@@ -126,6 +123,7 @@
 				689FCC852691B3C900D0B1FC /* Frameworks */,
 				689FCC862691B3C900D0B1FC /* Resources */,
 				DF3148FD81E869690739752B /* [CP] Embed Pods Frameworks */,
+				4717A208282D1EF21B46EDE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +209,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4717A208282D1EF21B46EDE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-estacionamientoTec/Pods-estacionamientoTec-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DF3148FD81E869690739752B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +254,6 @@
 				689FCCAB2692202C00D0B1FC /* TraficoViewController.swift in Sources */,
 				681CD4F92693F0160035E142 /* Espacio.swift in Sources */,
 				689FCC8C2691B3C900D0B1FC /* AppDelegate.swift in Sources */,
-				689FCCA82692200400D0B1FC /* EstacionMapaViewController.swift in Sources */,
 				689FCCA526921F9200D0B1FC /* EstacionListaViewController.swift in Sources */,
 				689FCCD72692A47C00D0B1FC /* RegistroViewController.swift in Sources */,
 				689FCC962691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld in Sources */,

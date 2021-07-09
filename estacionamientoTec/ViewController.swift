@@ -8,6 +8,7 @@
 import UIKit
 import CLTypingLabel
 import FirebaseAuth
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
@@ -19,12 +20,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.delegate = self
         
         msjBienvenidoLabel.charInterval = 0.1
         
         msjBienvenidoLabel.text = "Bienvenido Inicia Sesion"
         
         
+        //Comprobar la sesion del usuario
+        let defaults = UserDefaults.standard
+        
+    }
+    
+    
+    @IBAction func GoogleButton(_ sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signIn()
     }
     
     func alertaMsj(msj: String) {
@@ -57,3 +68,20 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if error == nil && user.authentication != nil {
+            
+            let credencial = GoogleAuthProvider.credential(withIDToken: user.authentication.idToken, accessToken: user.authentication.accessToken)
+                    
+            Auth.auth().signIn(with: credencial) { (resultado, error)
+                in
+                if let resultado = resultado, error == nil {
+                    self.performSegue(withIdentifier: "inicio", sender: self)
+                }
+            }
+        }
+    }
+    
+    
+}

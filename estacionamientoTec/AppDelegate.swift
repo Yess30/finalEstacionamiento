@@ -8,6 +8,8 @@ import UIKit
 import CoreData
 import Firebase
 import FirebaseFirestore
+import IQKeyboardManagerSwift
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         let db = Firestore.firestore()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         print(db)
         return true
+    }
+    
+    open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url) ?? false
     }
 
     // MARK: UISceneSession Lifecycle
