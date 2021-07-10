@@ -13,6 +13,8 @@ class EstacionListaViewController: UIViewController {
     
     var lugares = [Espacio]()
     let db = Firestore.firestore()
+    
+    var editarE: String!
 
     @IBOutlet weak var tablaEspacios: UITableView!
     
@@ -21,7 +23,7 @@ class EstacionListaViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
-        
+        tablaEspacios.register(UINib(nibName: "espaciosTableViewCell", bundle: nil), forCellReuseIdentifier: "cell2")
         cargarEspaciosL()
     }
     
@@ -33,10 +35,13 @@ class EstacionListaViewController: UIViewController {
                 print("Error al cargar los espacios: \(e.localizedDescription)")
             } else {
                 if let snapshotDocumentos = querySnapshot?.documents{
+                    self.lugares = []
                     for document in snapshotDocumentos {
                         //Crear objeto espacio
+                        
                         let datos = document.data()
                         print(datos)
+                        //self.lugares = []
                         
                         //Sacar parametros
                         guard let nombreD = datos["nombre"] as? String else { return }
@@ -73,12 +78,67 @@ extension EstacionListaViewController: UITableViewDelegate, UITableViewDataSourc
         return lugares.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tablaEspacios.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        celda.textLabel?.text = lugares[indexPath.row].nombre
-        celda.detailTextLabel?.text = lugares[indexPath.row].estado
+        let celda = tablaEspacios.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! espaciosTableViewCell
+        celda.espacioLabel?.text = lugares[indexPath.row].nombre
+        if lugares[indexPath.row].estado == "1" {
+            celda.estadoLabel?.text = "Libre"
+            celda.botonAc.backgroundColor = UIColor.green
+        }else{
+            celda.estadoLabel?.text = "ocupado"
+            celda.botonAc.backgroundColor = UIColor.red
+        }
+        //celda.estadoE = lugares[indexPath.row].estado
+        //celda.estadoLabel?.text = lugares[indexPath.row].estado
         
         return celda
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let celda = tablaEspacios.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! espaciosTableViewCell
+        let nom = lugares[indexPath.row].nombre
+        
+        
+        if lugares[indexPath.row].estado == "1" {
+            db.collection("Espacios").document(nom).setData([
+                "estado": "0",
+                "nombre": nom
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                    celda.botonAc.backgroundColor = UIColor.red
+                    celda.estadoLabel?.text = "Ocupado"
+                    self.cargarEspaciosL()
+                    self.tablaEspacios.reloadData()
+                    
+                }
+            }
+           
+        }else{
+            db.collection("Espacios").document(nom).setData([
+                "estado": "1",
+                "nombre": nom
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                    celda.botonAc.backgroundColor = UIColor.green
+                    celda.estadoLabel?.text = "Libre"
+                    self.cargarEspaciosL()
+                    self.tablaEspacios.reloadData()
+                }
+            }
+            
+        }
+        
+        
     }
     
     

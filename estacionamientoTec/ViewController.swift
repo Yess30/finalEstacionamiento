@@ -27,9 +27,10 @@ class ViewController: UIViewController {
         
         msjBienvenidoLabel.text = "Bienvenido Inicia Sesion"
         
+       
         
-        //Comprobar la sesion del usuario
-        let defaults = UserDefaults.standard
+        
+       
         
     }
     
@@ -78,6 +79,8 @@ extension ViewController: GIDSignInDelegate {
                 in
                 if let resultado = resultado, error == nil {
                     self.performSegue(withIdentifier: "inicio", sender: self)
+                }else{
+                    print("Error al iniciar con Google")
                 }
             }
         }

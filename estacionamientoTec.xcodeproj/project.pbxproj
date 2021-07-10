@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		681CD4F92693F0160035E142 /* Espacio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CD4F82693F0160035E142 /* Espacio.swift */; };
 		681CD4FD269578410035E142 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 681CD4FC269578410035E142 /* IQKeyboardManagerSwift */; };
+		685252E52698FB52004D1530 /* espaciosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685252E32698FB52004D1530 /* espaciosTableViewCell.swift */; };
+		685252E62698FB52004D1530 /* espaciosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685252E42698FB52004D1530 /* espaciosTableViewCell.xib */; };
+		6852530226992FE0004D1530 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852530126992FE0004D1530 /* OnboardingViewController.swift */; };
+		68525305269932C0004D1530 /* OnboardingDia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68525304269932C0004D1530 /* OnboardingDia.swift */; };
+		6852530826993612004D1530 /* OnboardinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852530726993612004D1530 /* OnboardinCollectionViewCell.swift */; };
 		689FCC8C2691B3C900D0B1FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */; };
 		689FCC8E2691B3C900D0B1FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */; };
 		689FCC902691B3C900D0B1FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FCC8F2691B3C900D0B1FC /* ViewController.swift */; };
@@ -26,6 +31,11 @@
 /* Begin PBXFileReference section */
 		636C25CDB1A49C3996D8E740 /* Pods_estacionamientoTec.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_estacionamientoTec.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681CD4F82693F0160035E142 /* Espacio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Espacio.swift; sourceTree = "<group>"; };
+		685252E32698FB52004D1530 /* espaciosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = espaciosTableViewCell.swift; sourceTree = "<group>"; };
+		685252E42698FB52004D1530 /* espaciosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = espaciosTableViewCell.xib; sourceTree = "<group>"; };
+		6852530126992FE0004D1530 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		68525304269932C0004D1530 /* OnboardingDia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDia.swift; sourceTree = "<group>"; };
+		6852530726993612004D1530 /* OnboardinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardinCollectionViewCell.swift; sourceTree = "<group>"; };
 		689FCC882691B3C900D0B1FC /* estacionamientoTec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = estacionamientoTec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689FCC8B2691B3C900D0B1FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689FCC8D2691B3C900D0B1FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +100,11 @@
 				689FCCAA2692202C00D0B1FC /* TraficoViewController.swift */,
 				689FCCD62692A47C00D0B1FC /* RegistroViewController.swift */,
 				681CD4F82693F0160035E142 /* Espacio.swift */,
+				685252E32698FB52004D1530 /* espaciosTableViewCell.swift */,
+				685252E42698FB52004D1530 /* espaciosTableViewCell.xib */,
+				6852530126992FE0004D1530 /* OnboardingViewController.swift */,
+				68525304269932C0004D1530 /* OnboardingDia.swift */,
+				6852530726993612004D1530 /* OnboardinCollectionViewCell.swift */,
 			);
 			path = estacionamientoTec;
 			sourceTree = "<group>";
@@ -179,6 +194,7 @@
 			files = (
 				689FCC9B2691B3DF00D0B1FC /* LaunchScreen.storyboard in Resources */,
 				689FCCB826929EDC00D0B1FC /* GoogleService-Info.plist in Resources */,
+				685252E62698FB52004D1530 /* espaciosTableViewCell.xib in Resources */,
 				689FCC982691B3DF00D0B1FC /* Assets.xcassets in Resources */,
 				689FCC932691B3C900D0B1FC /* Main.storyboard in Resources */,
 			);
@@ -254,8 +270,12 @@
 				689FCCAB2692202C00D0B1FC /* TraficoViewController.swift in Sources */,
 				681CD4F92693F0160035E142 /* Espacio.swift in Sources */,
 				689FCC8C2691B3C900D0B1FC /* AppDelegate.swift in Sources */,
+				685252E52698FB52004D1530 /* espaciosTableViewCell.swift in Sources */,
 				689FCCA526921F9200D0B1FC /* EstacionListaViewController.swift in Sources */,
+				68525305269932C0004D1530 /* OnboardingDia.swift in Sources */,
 				689FCCD72692A47C00D0B1FC /* RegistroViewController.swift in Sources */,
+				6852530226992FE0004D1530 /* OnboardingViewController.swift in Sources */,
+				6852530826993612004D1530 /* OnboardinCollectionViewCell.swift in Sources */,
 				689FCC962691B3C900D0B1FC /* estacionamientoTec.xcdatamodeld in Sources */,
 				689FCC8E2691B3C900D0B1FC /* SceneDelegate.swift in Sources */,
 			);
