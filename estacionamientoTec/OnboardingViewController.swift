@@ -15,7 +15,16 @@ class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var control: UIPageControl!
     @IBOutlet weak var botonSig: UIButton!
-    
+    var pagActual = 0 {
+        didSet{
+            control.currentPage = pagActual
+            if pagActual == diapositivas.count-1{
+                botonSig.setTitle("Comenzar", for: .normal)
+            }else{
+                botonSig.setTitle("Siguiente", for: .normal)
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +44,18 @@ class OnboardingViewController: UIViewController {
     
 
     @IBAction func btnSigClick(_ sender: UIButton) {
-    }
+        if pagActual == diapositivas.count-1 {
+            let vc = storyboard?.instantiateViewController(identifier: "home") as! UIViewController
+            vc.modalPresentationStyle = .fullScreen
+            vc.modalTransitionStyle = .coverVertical
+            present(vc, animated: true, completion: nil)
+        }else{
+            pagActual += 1
+            let indice = IndexPath(item: pagActual, section: 0)
+            onboardingCV.scrollToItem(at: indice, at: .centeredHorizontally, animated: true)
+        
+        }
+        }
     
 
 }
@@ -51,5 +71,18 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         return celda
     }
     
+    
+}
+
+extension OnboardingViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let ancho = scrollView.frame.width
+        pagActual = Int(scrollView.contentOffset.x/ancho)
+        
+    }
     
 }
